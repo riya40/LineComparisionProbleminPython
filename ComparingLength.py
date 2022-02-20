@@ -2,7 +2,12 @@
 Calculating The Length of Point(X,Y) of the Two Lines
 Compare The Two Lines Using The Equals Method
 equal Methods write the value equal or not
+Comparing the Two Lines using Compare Method returns value -1 for a<b,0 for a=b,1 for a>b
 """
+
+
+def cmp(x, y):
+    return (x > y) - (x < y)
 
 
 def calculating_length(x_point1, x_point2, y_point1,
@@ -15,6 +20,8 @@ def calculating_length(x_point1, x_point2, y_point1,
         print("equal")
     else:
         print("not equal")
+
+    print(cmp(line_1_length, line_2_length))
 
 
 if __name__ == '__main__':
